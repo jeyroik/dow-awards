@@ -1,0 +1,54 @@
+{
+    "name": "dow/awards",
+    "repositories": [
+        {
+          "name": "awards_samples",
+          "scope": "dow",
+          "pk": "name",
+          "class": "dow\\components\\awards\\samples\\AwardSample",
+          "aliases": ["awards_samples"]
+        },
+        {
+          "name": "awards",
+          "scope": "dow",
+          "pk": "name",
+          "class": "dow\\components\\awards\\Award",
+          "aliases": ["awards"]
+        }
+      ],
+      "plugins_install": [
+        {
+          "repository": "awards_samples",
+          "name": "award sample",
+          "section": "awards_samples"
+        },
+        {
+          "repository": "awards",
+          "name": "award",
+          "section": "awards"
+        }
+    ],
+    "awards_samples": [
+        {
+            "name": "hero",
+            "title": "Герой",
+            "description": "Тот, кто стал примером для меня",
+            "player_name": "jeyroik",
+            "created_at": "timestamp.now()",
+            "updated_at": "timestamp.now()",
+            "deleted_at": 0
+        }
+    ],
+    "awards": [
+        {
+            "name": "test",
+            "title": "Test",
+            "description": "Test award",
+            "player_name": "jeyroik",
+            "sample_name": "hero",
+            "created_at": "timestamp.now()",
+            "updated_at": "timestamp.now()",
+            "deleted_at": 0
+        }
+    ]
+}
